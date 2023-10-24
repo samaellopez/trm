@@ -30,9 +30,9 @@ public class TRMRepository {
     public TRM getLatestTRM() {
         List<TRM> trms = getAllTRMs();
         if (!trms.isEmpty()) {
-            return trms.get(trms.size() - 1);
+            return trms.get(0);
         }
-        return null;  // O manejarlo de una manera que consideres más apropiada.
+        return null; 
     }
     
 }
