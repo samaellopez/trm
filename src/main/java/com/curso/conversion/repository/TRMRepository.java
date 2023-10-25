@@ -1,7 +1,7 @@
 
-package com.curso.repository;
+package com.curso.conversion.repository;
 
-import com.curso.conversion.TRM;
+import com.curso.conversion.model.TRMDTO;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.enterprise.context.ApplicationScoped;
@@ -15,20 +15,20 @@ import java.util.List;
 @ApplicationScoped
 public class TRMRepository {
     
-    public List<TRM> getAllTRMs() {
+    public List<TRMDTO> getAllTRMs() {
         ObjectMapper objectMapper = new ObjectMapper();
-        List<TRM> trms;
+        List<TRMDTO> trms;
 
         try (InputStream is = getClass().getResourceAsStream("/trm.json")) {
-            trms = objectMapper.readValue(is, new TypeReference<List<TRM>>() {});
+            trms = objectMapper.readValue(is, new TypeReference<List<TRMDTO>>() {});
             return trms;
         } catch (Exception e) {
             throw new RuntimeException("Error al leer el archivo JSON", e);
         }
     }
 
-    public TRM getLatestTRM() {
-        List<TRM> trms = getAllTRMs();
+    public TRMDTO getLatestTRM() {
+        List<TRMDTO> trms = getAllTRMs();
         if (!trms.isEmpty()) {
             return trms.get(0);
         }

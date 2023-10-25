@@ -1,8 +1,9 @@
 
-package com.curso.service;
+package com.curso.conversion.service;
 
-import com.curso.conversion.TRM;
-import com.curso.repository.TRMRepository;
+import com.curso.conversion.model.TRMDTO;
+import com.curso.conversion.repository.TRMRepository;
+
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 
@@ -18,7 +19,7 @@ public class ConversionService {
     TRMRepository trmRepository;
 
     public Double convertUSDToCOP(Double amountInUSD) {
-        TRM latestTRM = trmRepository.getLatestTRM();
+        TRMDTO latestTRM = trmRepository.getLatestTRM();
         return amountInUSD * Double.parseDouble(latestTRM.getValor());
     }
 }

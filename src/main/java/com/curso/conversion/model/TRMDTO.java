@@ -1,18 +1,18 @@
 
-package com.curso.conversion;
+package com.curso.conversion.model;
 
 /**
  *
  * @author omayen
  */
-public class TRM {
+public class TRMDTO {
     
     private String valor;
     private String unidad;
     private String vigenciadesde;
     private String vigenciahasta;
 
-    public TRM() {
+    public TRMDTO() {
     }
     
     public String getValor() {
