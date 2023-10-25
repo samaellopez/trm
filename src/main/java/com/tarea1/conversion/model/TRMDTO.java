@@ -1,5 +1,5 @@
 
-package com.curso.conversion.model;
+package com.tarea1.conversion.model;
 
 /**
  *

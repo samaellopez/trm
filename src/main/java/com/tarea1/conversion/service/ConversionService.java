@@ -1,8 +1,8 @@
 
-package com.curso.conversion.service;
+package com.tarea1.conversion.service;
 
-import com.curso.conversion.model.TRMDTO;
-import com.curso.conversion.repository.TRMRepository;
+import com.tarea1.conversion.model.TRMDTO;
+import com.tarea1.conversion.repository.TRMRepository;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;

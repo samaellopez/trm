@@ -1,9 +1,10 @@
 
-package com.curso.conversion.repository;
+package com.tarea1.conversion.repository;
 
-import com.curso.conversion.model.TRMDTO;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.tarea1.conversion.model.TRMDTO;
+
 import jakarta.enterprise.context.ApplicationScoped;
 import java.io.InputStream;
 import java.util.List;

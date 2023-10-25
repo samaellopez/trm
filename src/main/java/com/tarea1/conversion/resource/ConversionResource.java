@@ -1,7 +1,7 @@
 
-package com.curso.conversion.resource;
+package com.tarea1.conversion.resource;
 
-import com.curso.conversion.service.ConversionService;
+import com.tarea1.conversion.service.ConversionService;
 
 import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;

@@ -1,4 +1,4 @@
-package com.curso;
+package com.tarea1;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
